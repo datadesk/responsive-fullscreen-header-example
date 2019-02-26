@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Responsive fullscreen header example</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <head>
+    <script>
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.min.js" async></script>
+  </head>
+</head>
+<body>
+    <header>
+        <figure>
+            <picture>
+                <source media="(orientation: portrait)"
+                        srcset="img/portrait.png">
+                <source media="(orientation: landscape)"
+                        srcset="img/landscape.png">
+                <img src="img/landscape.png">
+            </picture>
+        </figure>
+        <h1>Headline TK</h1>
+    </header>
+    <article>
+        <p>This is an example of a header image that changes
+           based on the device's orientation and always fits to fill the full screen.</p>
+        <p>You can learn more about the CSS techniques used here by reading
+            Mozilla's tutorials on <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images">responsive images</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit">object-fit</a>.</p>
+        <p>This page's source code is free and open <a href="https://www.github.com/datadesk/responsive-fullscreen-header-example/">on GitHub</a>.</p>
+    </article>
+</body>
+</html>
